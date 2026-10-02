@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mantap debes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+</body>
+</html>
+
+<header class="navbar">
+  <a href="#" class="brand-logo">DevPortfolio</a>
+  <nav class="nav-links">
+    <a href="#about">Tentang</a>
+    <a href="#skills">keahlian</a>
+    <a href="#projects">proyek</a>
+    <a href="#contact">kontak</a>
+  </nav>
+  <button id="theme-toggle" class="btn-theme" aria-label="Ganti Tema">
+      Mode Gelap
+  </button>
+  </header>
+
+  <section class="hero-section" id="about">
+    <img
+      src="https://awsimages.detik.net.id/visual/2026/07/07/soccer-worldcup-por-esp-1783386095170_169.jpeg?w=900&q=80"
+      alt="Foto Profil Debes"
+      class="hero-avatar">
+      <h1 class="hero-title">Halo, saya debes</h1>
+      <p class="hero-subtitle">
+        Orang paling keren sedunia dan paling mantap
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">lihat proyek saya</a>
+        <a href="#contact" class="btn btn-outline">telfon saye</a>
+      </div>
+  </section>
+
+  <main class="main-content">
+    <section class="section" id="skills">
+      <h2 class="section-title">Keahlian teknis</h2>
+      <div class="skills-container">
+        <span class="skill-badge">HTML5 Semantik</span>
+        <span class="skill-badge">CSS3 Flexbox & Grid</span>
+        <span class="skill-badge">JavaScript modern (ES6+)</span>
+        <span class="skill-badge">Desain Responsif Mobile</span>
+        <span class="skill-badge">Git & GitHub</span>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <h2 class="section-title">Portofolio Proyek</h2>
+
+      <div class="filter-wrapper">
+        <button type="button" class="filter-btn active" data-filter="all">Semua</button>
+        <button type="button" class="filter-btn" data-filter="Web">Web app</button>
+        <button type="button" class="filter-btn" data-filter="ui">UI Design</button>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+        <article class="projects-card" data-category="web">
+          <div class="project-info">
+            <span class="project-info">Web App</span>
+            <h3 class="Project-title">E-Commerce Dashboard</h3>
+            <p class="project-desc">Aplikasi yang paling keren dan mantap</p>
+            <a href="#" class="project-link">lihat detail proyek &rarr;</a>
+          </div>
+        </article>
+        <article class="project-card" data-category="web">
+          <div class="project-info">
+            <span class="project-tag">Web APP</span>
+            <h3 class="Project-title">Task Management</h3>
+
+            <p class="project-desc">Aplikasi produktivitas sehat</p>
+
+            <a href="#" class="project-link">lihat detail proyek &rarr;</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2 class="section-title">hubungi saya</h2>
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <label for="sender-name">Nama Lengkap</label>
+          <input
+            type="text"
+            id="sender-name"
+            class="form-input"
+            placeholder="Masukkan nama anda"
+            required>
+        </div>
+
+        <div class="form-group">
+          <label for="sender-email">alamat email</label>
+          <input
+            type="email"
+            id="sender-email"
+            class="form-input"
+            placeholder="nama email"
+            required>
+        </div>
+
+        <div class="form-group">
+          <label for="sender-massage">pesan anda</label>
+          <textarea
+            id="sender-massage"
+            class="form-textarea"
+            rows="4"
+            placeholder="tuliskan pesan di sini"
+            required></textarea>
+        </div>
+
+        <button type="submit" id="btn-summit" class="btn btn-primary">
+          Kirim pesan
+        </button>
+      </form>
+
+      <div id="form-feedback" class="form-feedback"
+      style="display:none;"></div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <p>&copy; 2026 HeroDebes. Dibuat gunakan HTML, CSS, dan JS murni.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
